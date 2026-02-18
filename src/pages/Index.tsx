@@ -13,14 +13,7 @@ const CATEGORIES = ["Все", "Транспорт", "Скины", "Оружие"
 const VERSIONS = ["Все версии", "0.3.7", "0.3DL", "RAGE MP"];
 const STYLES = ["Все стили", "Реализм", "Дрифт", "RP", "Фан"];
 
-const MODS = [
-  { id: 1, name: "BMW M5 F90 Custom", category: "Транспорт", version: "0.3.7", style: "Реализм", price: 299, oldPrice: 499, img: MOD_IMG_1, rating: 4.9, sales: 342, hot: true },
-  { id: 2, name: "Gangster Outfit Pack", category: "Скины", version: "0.3DL", style: "RP", price: 199, img: MOD_IMG_2, rating: 4.7, sales: 215, hot: false },
-  { id: 3, name: "Mercedes-AMG GT63", category: "Транспорт", version: "RAGE MP", style: "Реализм", price: 349, img: MOD_IMG_1, rating: 4.8, sales: 189, hot: true },
-  { id: 4, name: "AK-47 Neon Edition", category: "Оружие", version: "0.3.7", style: "Фан", price: 149, oldPrice: 249, img: MOD_IMG_2, rating: 4.6, sales: 428, hot: false },
-  { id: 5, name: "Night City Textures", category: "Текстуры", version: "0.3DL", style: "Реализм", price: 399, img: MOD_IMG_1, rating: 5.0, sales: 97, hot: true },
-  { id: 6, name: "Drift Physics Script", category: "Скрипты", version: "0.3.7", style: "Дрифт", price: 599, img: MOD_IMG_2, rating: 4.9, sales: 156, hot: false },
-];
+const MODS: { id: number; name: string; category: string; version: string; style: string; price: number; oldPrice?: number; img: string; rating: number; sales: number; hot: boolean }[] = [];
 
 const REVIEWS = [
   { name: "DarkRider", avatar: "🎮", text: "Лучшие моды на транспорт! BMW выглядит как настоящая, установил за 5 минут.", rating: 5 },
